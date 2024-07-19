@@ -3,13 +3,13 @@ import 'package:get/get.dart';
 import 'dart:math' as math;
 
 class lokasiMq {
-  var latitudeMq = -6.493381413393206;
-  var longtitudeMq = 107.00826192519128;
+  var latitude = -6.4729441;
+  var longtitude = 106.984574;
 }
 
 class lokasiSalah {
-  var latitudeMq = -6.492880392690775;
-  var longtitudeMq = 107.0146563114299;
+  var latitude = -6.492880;
+  var longtitude = 107.014656;
 }
 
 class GpsTestController extends GetxController {
@@ -18,9 +18,9 @@ class GpsTestController extends GetxController {
   var isAllowed = false.obs;
 
   final allowedLocation = {
-    'latitude': lokasiMq().latitudeMq, // ganti dengan latitude lokasi MQ
-    'longitude': lokasiMq().longtitudeMq, // ganti dengan longitude lokasi MQ
-    'radius': 100,
+    'latitude': lokasiMq().latitude, // ganti dengan latitude lokasi MQ
+    'longitude': lokasiMq().longtitude, // ganti dengan longitude lokasi MQ
+    'radius': 500,
   };
 
   double _getDistance(double lat1, double lon1, double lat2, double lon2) {
