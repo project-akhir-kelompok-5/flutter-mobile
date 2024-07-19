@@ -21,9 +21,7 @@ class GpsTestView extends GetView<GpsTestController> {
               children: [
                 Text('Latitude: ${locationController.currentPosition.value!.latitude}'),
                 Text('Longitude: ${locationController.currentPosition.value!.longitude}'),
-                // locationController.isAllowed.value
-                //     ? Text('Anda berada di lokasi yang diizinkan.')
-                //     : Text('Anda tidak ada di lokasi tersebut.'),
+
                 ElevatedButton(
                   onPressed: locationController.handleAbsensi,
                   child: Text('Absen'),
