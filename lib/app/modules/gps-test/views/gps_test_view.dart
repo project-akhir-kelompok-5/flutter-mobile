@@ -10,7 +10,7 @@ class GpsTestView extends GetView<GpsTestController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('GPS Validasi')),
+      appBar: AppBar(title: Text('GPS')),
       body: Center(
         child: Obx(() {
           if (locationController.currentPosition.value == null) {
